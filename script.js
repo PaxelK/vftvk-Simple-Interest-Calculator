@@ -15,7 +15,7 @@ function compute()
 
     // Appends the final result according to the format described in the task
     document.getElementById("result").innerHTML="If you deposit <mark>" + principal.toString() + "</mark>,<br>";
-    document.getElementById("result").innerHTML+="at an interest rate of <mark>" + rate.toString() + "%</mark>.<br>";
+    document.getElementById("result").innerHTML+="at an interest rate of <mark>" + rate.toString() + " percent</mark>.<br>";
     document.getElementById("result").innerHTML+="You will receive an amount of <mark>" + interest.toString() + "</mark>,<br>";
     document.getElementById("result").innerHTML+="in the year <mark>" + year.toString() + "</mark>.<br>";
 }
