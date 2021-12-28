@@ -24,12 +24,12 @@ function compute()
 function updateRate()
 {
     var rateval = document.getElementById("rate").value;
-    document.getElementById("rate_val").innerText=rateval;
+    document.getElementById("rate_val").innerText=rateval + "%";
 }
 
 // This function checks the entered value of the principal input
 function validatePrincipal(){
-    if(parseInt(document.getElementById("principal").value)<=0){
+    if(parseInt(document.getElementById("principal").value)<=0 || document.getElementById("principal").value === ""){
         alert("Enter a positive number.");
         document.getElementById("principal").focus();
         return false;
